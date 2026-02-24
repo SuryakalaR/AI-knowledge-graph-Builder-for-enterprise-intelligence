@@ -1,8 +1,9 @@
+import streamlit as st
 from neo4j import GraphDatabase
 
-URI = "bolt://127.0.0.1:7687"
-USER = "neo4j"
-PASSWORD = "123456789"  # change if needed
+URI = st.secrets["NEO4J_URI"]
+USER = st.secrets["NEO4J_USER"]
+PASSWORD = st.secrets["NEO4J_PASSWORD"]
 
 driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
 
