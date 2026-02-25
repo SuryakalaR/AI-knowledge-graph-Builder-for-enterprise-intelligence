@@ -1,5 +1,6 @@
 streamlit
-plotly
-pandas
 neo4j
+pandas
+plotly
 networkx
+numpy
