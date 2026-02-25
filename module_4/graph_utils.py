@@ -3,7 +3,7 @@ import pandas as pd
 import networkx as nx
 
 # 🔑 UPDATE YOUR PASSWORD HERE
-URI = "bolt://localhost:7687"
+URI = "bolt://127.0.0.1:7687"
 USER = "neo4j"
 PASSWORD = "123456789"
 
